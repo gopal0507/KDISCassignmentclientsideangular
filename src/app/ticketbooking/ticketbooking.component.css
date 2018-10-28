@@ -1,0 +1,30 @@
+.calculate{
+    float:right;
+}
+.ticketfo{
+    width: 68%;
+    margin-left: 178px;
+}
+.panelhead{
+    background-color: teal;
+    height: 45px;
+}
+.selectMatch{
+    margin-left: 23px;
+    height:29px;
+    border-radius: 15px;
+}
+.cancel{
+    margin-left:16px;
+}
+.ticketheading{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 8px;
+}
+.seats{
+    color: red;
+}
+.seatsinput{
+    width: 20%;
+}

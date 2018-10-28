@@ -1,0 +1,70 @@
+
+    <div>
+        <div><button class="btn btn-success registerteam" *ngIf="islogin" routerLink="/teamregistration">Register Your Team</button></div>
+        <div><button class="btn btn-success registerteam" *ngIf="!islogin" disabled="true" routerLink="/teamregistration">Register Your Team</button></div>
+      <h2 style="text-align:center">BEST CAPTURES</h2>
+      
+  
+      <div class="container">
+        <div [ngClass]="(slideIndex==1)?' mySlides':' myNotSlides'">
+         
+          <img src="../assets/images/salah.png" style="width:100%">
+        </div>
+  
+        <div [ngClass]="(slideIndex==2)?' mySlides':' myNotSlides'">
+          
+          <img src="../assets/images/getty.jpg" style="width:100%">
+        </div>
+  
+        <div [ngClass]="(slideIndex==3)?' mySlides':' myNotSlides'">
+         
+          <img src="../assets/images/arsenalplay.JPG" style="width:100%">
+        </div>
+  
+        <div [ngClass]="(slideIndex==4)?' mySlides':' myNotSlides'">
+         
+          <img src="../assets/images/celeberations.JPG" style="width:100%">
+        </div>
+  
+        <div [ngClass]="(slideIndex==5)?' mySlides':' myNotSlides'">
+         
+          <img src="../assets/images/goal.jpg" style="width:100%">
+        </div>
+  
+        <div [ngClass]="(slideIndex==6)?' mySlides':' myNotSlides'">
+          
+          <img src="../assets/images/missed.jpg" style="width:100%">
+        </div>
+  
+        <a class="prev" (click)="prevSlides()">❮</a>
+        <a class="next" (click)="nextSlides()">❯</a>
+  
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+  
+        <div class="row">
+          <div class="column">
+            <img [ngClass]="(slideIndex==1)?'what':' demo'" src="../assets/images/salah.png" (click)="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img [ngClass]="(slideIndex==2)?'what':' demo'" src="../assets/images/getty.jpg" (click)="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img [ngClass]="(slideIndex==3)?'what':' demo'" src="../assets/images/arsenalplay.JPG" (click)="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img [ngClass]="(slideIndex==4)?'what':' demo'" src="../assets/images/celeberations.JPG" (click)="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img [ngClass]="(slideIndex==5)?'what':' demo'" src="../assets/images/goal.jpg" (click)="currentSlide(5)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img [ngClass]="(slideIndex==6)?'what':' demo'" src="../assets/images/missed.jpg" (click)="currentSlide(6)" alt="Snowy Mountains">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+        <p-growl [(value)]="msgs"></p-growl>
+        </div>

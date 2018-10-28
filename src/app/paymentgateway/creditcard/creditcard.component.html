@@ -1,0 +1,35 @@
+<form #creditform="ngForm" (ngSubmit)="onSubmitForm()">
+    <div class="panel panel-primary">
+      <div class="panel heading headcred">
+        <h3 class="panel-title creditheading">Credit Card Payment Info</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group" [class.has-error]="cardnumbercontrol.invalid && cardnumbercontrol.touched">
+                  <label for="cardnumber" class="control-label">Credit Card Number</label>
+                  <input type="number" required class="form-control" id="cardnumber" name="cardnumber" [(ngModel)]="cardnumber" #cardnumbercontrol="ngModel" placeholder="Creditcard number">
+                  <span class="help-block" *ngIf="cardnumbercontrol.invalid && cardnumbercontrol.touched">Cardnumber is required</span>
+          </div>
+          <div class="form-group" [class.has-error]="cardnamecontrol.invalid && cardnamecontrol.touched">
+              <label for="cardname" class="control-label">Credit Card Holder Name</label>
+              <input type="text" required class="form-control" id="cardname" name="cardname" [(ngModel)]="cardname" #cardnamecontrol="ngModel" placeholder="Creditcard name">
+              <span class="help-block" *ngIf="cardnamecontrol.invalid && cardnamecontrol.touched">Cardname is required</span>
+      </div>
+    <div class="form-group" [class.has-error]="datecontrol.invalid && datecontrol.touched">
+        <label for="date" class="control-label">Date of Expiry</label>
+        <input type="text" required class="form-control dates" id="date" name="date" [(ngModel)]="date" #datecontrol="ngModel">
+        <span class="help-block" *ngIf="datecontrol.invalid && datecontrol.touched">Date is required</span>
+      </div>
+    <div class="form-group" [class.has-error]="cvvcontrol.invalid && cvvcontrol.touched">
+        <label class="control-label">CVV</label>
+        <input type="password" required class="form-control cvvs" name="cvv" [(ngModel)]="cvv" #cvvcontrol="ngModel">
+        <span class="help-block" *ngIf="cvvcontrol.invalid && cvvcontrol.touched">CVV is required</span>
+    </div>
+   </div>
+  
+    <div class="panel-footer">
+    <button type="submit" class="btn btn-primary" [disabled]="creditform.invalid">Pay</button>
+    <button type="button" routerLink='/ticketbooking' class="btn btn-primary cancel">Cancel</button>
+    </div>
+  </div>
+  </form>
+

@@ -1,0 +1,91 @@
+<span><img class="headic" src="../assets/images/messironaldo.jpg"></span>
+
+<div class="container head">
+  <div class="row">
+<div style="text-align:center">
+  <span class="firstone">
+    <a href="#" (click)="getArsenal()"><img class="headicon1" src="../assets/images/arsenal.png"></a>
+  </span>
+  <span>
+    <a href="#" (click)="getChelsea()"><img class="headicon2" src="../assets/images/chelsea.png"></a>
+  </span>
+  <span>
+    <a href="#"><img class="headicon5" src="../assets/images/united.png"></a>
+  </span>
+  <span>
+    <a href="#"><img class="headicon6" src="../assets/images/liverpool.png"></a>
+  </span>
+  <span class="heading">
+    !{{ title }}!
+  </span>
+  <span>
+    <a href="#"><img class="headicon3" src="../assets/images/barcelona.png"></a>
+  </span>
+  <span>
+    <a href="#"><img class="headicon4" src="../assets/images/realmadrid.png"></a>
+  </span>
+  <span>
+    <a href="#"><img class="headicon7" src="../assets/images/amadrid.png"></a>
+  </span>
+  <span>
+    <a href="#"><img class="headicon8" src="../assets/images/juventus.png"></a>
+  </span>
+  <span  *ngIf="!islogin" class="login">
+    <a routerLink="/login">Login</a>
+  </span>
+  <span *ngIf="!islogin" class="register">
+    <a routerLink="/register">Register</a>
+  </span>
+  <span *ngIf="islogin" class="login">
+      <a routerLink="/" (click)="backToLogin()">Logout</a>
+    </span>
+  </div>
+  <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbarss">
+      
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" *ngIf="!islogin" [class.disabled]="true">Matches</a>
+                <a class="nav-link" *ngIf="islogin" routerLink="/matches">Matches</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cursor" *ngIf="!islogin" [class.disabled]="true" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Teams
+                </a>
+                <a class="nav-link dropdown-toggle" *ngIf="islogin" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teams
+                  </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" *ngIf="islogin"  routerLink="/registeredteams">Teams Registered</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                  <!-- <a class="nav-link" *ngIf="!islogin" [class.disabled]="true">Ticket Booking</a> -->
+                  <a class="nav-link" *ngIf="!islogin" [class.disabled]="true">Ticket Booking</a>
+                  <a class="nav-link" *ngIf="islogin" routerLink="/ticketbooking">Ticket Booking</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" *ngIf="!islogin" [class.disabled]="true">Ticket Booking</a> -->
+                   
+                    <label class="user" *ngIf="islogin">Hi, {{username}}</label>
+                  </li>
+            </ul>
+           
+          </div>
+        </nav>
+  </div>
+  <div class="col-xs-12 col-md-12 sm-12">
+      <router-outlet></router-outlet>
+      
+    </div>
+    
+</div>
+<p-growl [(value)]="msgs" life="2000"></p-growl>
+</div>
+
+

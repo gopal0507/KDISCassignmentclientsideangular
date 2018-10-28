@@ -1,0 +1,26 @@
+.unsuccessfull{
+    color: red;
+}
+.fees{
+    font: bold;
+}
+.cancel{
+    margin-left: 16px;
+}
+.otpform{
+    width: 50%;
+    margin-left: 280px;
+}
+
+.otpheading{
+    text-align: center;
+    font-size:25px;
+    margin-top: 4px;
+}
+.otphead{
+    height: 37px;
+    background-color: teal;
+}
+.optin{
+    width: 30%;
+}

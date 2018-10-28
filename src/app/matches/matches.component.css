@@ -1,0 +1,94 @@
+@import "../../../Content/primeng.css";
+.table-body:hover{
+    background-color: azure;
+}
+
+div .table-body:hover .edit{
+    background-color: azure;   
+    display: block;
+    cursor: pointer;
+  
+}
+div .table-body:hover .delete{
+    background-color: azure;   
+    display: block;
+    cursor: pointer;
+}
+.table-body:hover .save{
+    background-color: azure;   
+    display: block;
+    cursor: pointer;
+  
+}
+.table-body:hover .cancel{
+    background-color: azure;   
+    display: block;
+    cursor: pointer;
+  
+}
+.delete{
+    display:none;
+    cursor: pointer;
+    color: red;
+}
+
+.edit{
+    display:none;
+    cursor: pointer;
+    color: grey;
+}
+.save{
+    display:block;
+    color: green;
+}
+.saves{
+    display:none;
+    color: green;
+}
+.cancel{
+    display:block;
+    color: red;
+}
+.cancels{
+    display:none;
+    color: red;
+}
+.add{
+    float: right;
+    width: 105px;
+    height: 35px;
+    font-size: 12px;
+    margin-bottom:20px;
+}
+tr{
+    height: 70px;
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+/* .tick::before{
+    content: '\E10A';
+} */
+#autocomplete .ui-autocomplete {
+    z-index: 100;
+    }
+.styletable{
+    border: ridge;
+}
+th{
+    border-right: ridge;
+}
+td{
+    border-right: ridge;
+}
+th:nth-last-child(2),td:nth-last-child(2) {
+    border-right: none;
+}
+.tahead{
+    background-color: lightseagreen;
+}
+.border{
+    border-radius: 15px;
+}
+
+

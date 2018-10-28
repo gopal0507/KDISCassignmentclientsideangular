@@ -1,0 +1,38 @@
+.username{
+    width:300px;
+}
+.pass{
+    width: 300px;
+}
+.notusername{
+    border-color: red;
+    width:300px;
+}
+.notpass{
+    border-color: red;
+    width:300px;
+}
+.credentials{
+    color: red;
+}
+.loginheading{
+    text-align: center;
+    font-size: 30px;
+    width: 335px;
+    background-color: turquoise;
+}
+.firstinput{
+    margin-top: 30px;
+}
+.loginbutton{
+    margin-left: 121px;
+    width: 87px;
+    margin-top: 43px;
+}
+.forms{
+    border: 2px dashed;
+    height: 326px;
+}
+.divcred{
+    height: 0px;
+}

@@ -1,0 +1,12 @@
+.tablelist{
+    border: ridge;
+}
+th{
+    border-right: ridge;
+}
+td{
+    border-right: ridge;
+}
+.head{
+    background-color: turquoise;
+}

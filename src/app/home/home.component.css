@@ -1,0 +1,55 @@
+.prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left:-42px;
+    -webkit-user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right:-45px;
+  }
+    .prev:hover,
+    .next:hover {
+      background-color: azure;
+    }
+  
+  .myNotSlides {
+    display: none;
+  }
+  .mySlides{
+    display:block;
+  }
+  
+  .demo{
+  height:80px;
+  width:190px;
+  cursor:pointer;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .what{
+   opacity:1;
+  height:80px;
+  width:190px;
+  cursor:pointer;
+  
+  }
+  
+    .demo:hover {
+      opacity: 1;
+    }
+  .registerteam{
+    float: right;
+  }

@@ -1,0 +1,210 @@
+.heading {
+    color: black;
+    font-size:40px;
+  }
+  .header{
+    background-color:darkblue;
+  }
+  
+  .form-control {
+    margin-left: 900px;
+  }
+  .navbarss{
+    background-color:azure !important;
+  }
+  .nav-item{
+    padding-left:31px;
+  }
+  
+  .arssymbol{
+    height:100px;
+    margin-left:0px;
+  }
+  .chesymbol {
+    height: 300px;
+  }
+  
+  p{
+    margin-top:10px;
+  }
+.headicon1{
+    height:50px;
+  }
+  .headicon2{
+    height:50px;
+  }
+  .headicon3 {
+    height: 50px;
+  }
+  
+  .headicon4 {
+    height: 50px;
+  }
+  .headicon5 {
+    height: 50px;
+  }
+  
+  .headicon6 {
+    height: 50px;
+  }
+  
+  .headicon7 {
+    height: 50px;
+  }
+  
+  .headicon8 {
+    height: 50px;
+  }
+
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: 239px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left:-42px;
+    -webkit-user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right:147px;
+  }
+    .prev:hover,
+    .next:hover {
+      background-color: azure;
+    }
+  
+  .myNotSlides {
+    display: none;
+  }
+  .mySlides{
+    display:block;
+  }
+  .cursor{
+    cursor: auto;
+  }
+  .demo{
+  height:80px;
+  width:190px;
+  cursor:pointer;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .what{
+   opacity:1;
+  height:80px;
+  width:190px;
+  cursor:pointer;
+  
+  }
+  
+    .demo:hover {
+      opacity: 1;
+    }
+  
+  .modal-body{
+    margin-left:15px;
+  }
+  .checkboxes {
+    margin-left: 15px;
+  }
+  .modal-title{
+    padding-left:140px;
+  }
+  .voting{
+    float:right;
+    margin-top:-20px;
+  }
+  .legends{
+    height:400px;
+  }
+  .firstrow{
+    height:100%;
+    width:100%;
+  }
+  .notlegends {
+    height: 200px;
+  }
+  .away{
+    margin-left:150px;
+  }
+  .score{
+    font-size:85px;
+    margin-left:90px;
+    margin-top:23px;
+  }
+  .league{
+    font-size:11px;
+    margin-top:-12px;
+  }
+  .opposite{
+    height:88px;
+    margin-top:40px;
+  }
+  .sameteam {
+    height: 88px;
+    margin-left:135px;
+    margin-top:40px;
+  }
+  .opposite1 {
+    height: 88px;
+  }
+  
+  .sameteam2 {
+    height: 88px;
+    margin-left: 135px;
+  }
+  .versus{
+    margin-left:-156px;
+    font-size:23px;
+  }
+  .matchess{
+    margin-top:48px;
+  }
+  .firstpanel{
+    border:1px solid thick;
+  }
+  
+  .other {
+    margin-left: 15px;
+  }
+  .navbar{
+    width:100%;
+  }
+  .login{
+    padding-left: 100px;
+  }
+  .register{
+    padding-left:10px;
+  }
+  .ui-autocomplete {
+    z-index: 100;
+    }
+    .firstone{
+      padding-left: 148px;
+    }
+    .headic{
+      height: 229px;
+      width: 338px;
+    }
+    .headico{
+      height: 229px;
+      width: 338px;
+    }
+    .head{
+      margin-top: -179px;
+    }
+.user{
+  margin-left: 500px;
+  margin-top: 17px;
+}

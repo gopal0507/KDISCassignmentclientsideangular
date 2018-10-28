@@ -1,0 +1,28 @@
+<form #teamregister="ngForm" class="head" (ngSubmit)="onSubmitForm()">
+    <div class="panel panel-primary">
+      <div class="panel heading heads">
+        <h3 class="panel-title register">TEAM REGISTERATION</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group" [class.has-error]="teamnamecontrol.invalid && teamnamecontrol.touched">
+                  <label for="teamname" class="control-label">Team Name</label>
+                  <input type="text" required class="form-control" id="teamname" name="teamname" [(ngModel)]="teamname" #teamnamecontrol="ngModel" placeholder="Teamname">
+                  <span class="help-block" *ngIf="teamnamecontrol.invalid && teamnamecontrol.touched">Teamname is required</span>
+          </div>
+    <div class="form-group" [class.has-error]="locationcontrol.invalid && locationcontrol.touched">
+        <label for="location" class="control-label">Location</label>
+        <input type="text" required class="form-control" id="location" name="location" [(ngModel)]="location" #locationcontrol="ngModel">
+        <span class="help-block" *ngIf="locationcontrol.invalid && locationcontrol.touched">Address is required</span>
+      </div>
+    <div class="form-group" [class.has-error]="mobilecontrol.invalid && mobilecontrol.touched">
+        <label class="control-label">Contact Number</label>
+        <input type="number" required class="form-control" name="mobile" [(ngModel)]="mobile" #mobilecontrol="ngModel">
+        <span class="help-block" *ngIf="mobilecontrol.invalid && mobilecontrol.touched">Contact is required</span>
+    </div>
+   </div>
+  
+    <div class="panel-footer">
+    <button type="submit" class="btn btn-primary" [disabled]="teamregister.invalid">Register</button>
+    </div>
+  </div>
+  </form>

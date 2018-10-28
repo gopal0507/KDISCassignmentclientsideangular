@@ -1,0 +1,61 @@
+<form #ticketform="ngForm" class="ticketfo" (ngSubmit)="onSubmitForm()">
+    <div class="panel panel-primary">
+      <div class="panel heading panelhead">
+        <h3 class="panel-title ticketheading">ONLINE TICKET BOOKING</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group" [class.has-error]="usernamecontrol.invalid && usernamecontrol.touched">
+                  <label for="username" class="control-label">MATCH : </label>
+                  <select class="selectMatch">
+                    <option>Select any Matches</option>
+                    <option *ngFor="let item of newData">{{item.hteam}} vs {{item.ateam}}</option>
+                  </select>
+                  <!-- <input type="text" required class="form-control" id="matchname" name="matchname" [(ngModel)]="matchname" #matchnamecontrol="ngModel" placeholder="Match">
+                  <span class="help-block" *ngIf="matchnamecontrol.invalid && matchnamecontrol.touched">Select any matches</span> -->
+          </div>
+          <div class="form-group" [class.has-error]="levelcontrol.invalid && levelcontrol.touched">
+              <label class="control-label">Seat Level</label>
+             
+                <div class="form-control">
+                    <label class="radio-inline">
+                    <input required type="radio" id="inlineCheckbox1" name="level" #levelcontrol="ngModel" value="gl" [(ngModel)]="level">Ground Level
+                    </label>
+                
+                    <label class="radio-inline">
+                    <input required type="radio" id="inlineCheckbox2" name="level" #levelcontrol="ngModel" value="ml" [(ngModel)]="level">Middle Level
+                  </label>
+                  <label class="radio-inline">
+                    <input required type="radio" id="inlineCheckbox2" name="level" #levelcontrol="ngModel" value="hl" [(ngModel)]="level">Upper Level
+                  </label>
+                
+                  <label class="radio-inline">
+                    <input required type="radio" id="inlineCheckbox2" name="level" #levelcontrol="ngModel" value="vip" [(ngModel)]="level">VIP
+                    </label>
+                </div>
+                      
+             
+            
+            </div>
+
+    <div class="form-group" [class.has-error]="seatscontrol.invalid && seatscontrol.touched">
+        <label class="control-label">Number of Seats Required</label>
+        <input type="number" class="form-control seatsinput" [maxlength]="1" required name="noofseats" #seatscontrol="ngModel" [(ngModel)]="noofseats">
+        <span class="help-block seats" *ngIf="seatscontrol.invalid && seatscontrol.touched">Select number of Seats</span>
+    </div>
+    <div class="form-group">
+        <label>Total Fee : </label>
+        <button type="button" class="btn btn-success calculate" (click)="calculateFee()">Calculate</button>
+        <label *ngIf="calculate">{{totalfee}}</label>
+    </div>
+    <div *ngIf="!fill" style="color:red">Enter All Details and click calculate</div>
+   </div>
+  
+    <div class="panel-footer">
+    <button type="submit" class="btn btn-primary" [disabled]="ticketform.invalid">Pay</button>
+    <button type="button" routerLink='/' class="btn btn-primary cancel">Cancel</button>
+    </div>
+  </div>
+  </form>
+
+
+  

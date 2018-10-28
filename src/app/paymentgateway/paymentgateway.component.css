@@ -1,0 +1,64 @@
+.sidebar{
+    width: 100%;
+    border: 1px solid;
+}
+.netbanking {
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+.creditcard {
+    height: 56px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 17px;
+
+}
+.debitcard {
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+    
+}
+.select{
+    background-color:lightcyan;
+}
+
+.netbanking:hover{
+    background-color: powderblue;
+}
+.creditcard:hover{
+    background-color: powderblue;
+}
+.debitcard:hover{
+    background-color: powderblue;
+}
+.sidearrow{
+    display: none;
+    color: black;
+    margin-left: 10px;
+}
+.netbanking:hover .sidearrow{
+    background-color: powderblue;
+    display: inline;
+    cursor: pointer;
+}
+.creditcard:hover .sidearrow{
+    background-color: powderblue;
+    display: inline;
+    cursor: pointer;
+}
+.debitcard:hover .sidearrow{
+    background-color: powderblue;
+    display: inline;
+    cursor: pointer;
+}
+.payhead{
+    height:37px;
+    width: 251px;
+    padding-top: 5px;
+    background-color: greenyellow;
+}

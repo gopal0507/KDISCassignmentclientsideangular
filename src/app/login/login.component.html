@@ -1,0 +1,19 @@
+<div>
+<form class="col-sm-4 col-sm-push-4 forms">
+  <div class="loginheading">LOGIN</div>
+  <div class="form-group firstinput">
+    <label>Username</label>
+    <input type="text" [ngClass]="blank ?'username':'notusername'" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" [(ngModel)]="username" placeholder="Enter username">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" [ngClass]="blanks ?'pass':'notpass'" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password" placeholder="Password">
+  </div>
+  <div class="divcred">
+  <span class="credentials" *ngIf="!valid">*Invalid Credentials</span>
+</div>
+  <button type="submit" (click)="onLogin()" class="btn btn-primary loginbutton">Login</button>
+</form>
+</div>
+<p-growl [(value)]="msgs"></p-growl>

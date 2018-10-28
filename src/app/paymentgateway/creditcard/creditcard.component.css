@@ -1,0 +1,18 @@
+.creditheading{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 4px;
+}
+.cancel{
+    margin-left: 15px;
+}
+.headcred{
+    height: 39px;
+    background-color: teal;
+}
+.dates{
+    width: 50%;
+}
+.cvvs{
+width: 20%;
+}

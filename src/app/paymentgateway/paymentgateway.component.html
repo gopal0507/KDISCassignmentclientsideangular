@@ -1,0 +1,10 @@
+<div class="sidebar col-sm-3">
+  
+      <h3 class="payhead">Select Payment Option</h3>
+      <div class="creditcard" [ngClass]="creditcard?'select':''" (click)="clickonCreditcard()">Credit Card<span class="sidearrow">>></span></div>
+      <div class="debitcard" [ngClass]="debitcard?'select':''" (click)="clickonDebitcard()">Debit Card<span class="sidearrow">>></span></div>
+</div>
+<div class="col-sm-9">
+ <app-creditcard *ngIf="creditcard"></app-creditcard>
+ <app-debitcard *ngIf="debitcard"></app-debitcard>
+</div>

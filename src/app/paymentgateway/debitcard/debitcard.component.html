@@ -1,0 +1,35 @@
+<form #debitform="ngForm" (ngSubmit)="onSubmitForm()">
+    <div class="panel panel-primary">
+      <div class="panel heading headdebt">
+        <h3 class="panel-title debitheading">Debit Card Payment Info</h3>
+        </div>
+        <div class="panel-body">
+          <div class="form-group" [class.has-error]="debitnumbercontrol.invalid && debitnumbercontrol.touched">
+                  <label for="debitnumber" class="control-label">Debit Card Number</label>
+                  <input type="number" required class="form-control" id="debitnumber" name="debitnumber" [(ngModel)]="debitnumber" #debitnumbercontrol="ngModel" placeholder="Debitcard number">
+                  <span class="help-block" *ngIf="debitnumbercontrol.invalid && debitnumbercontrol.touched">Debitnumber is required</span>
+          </div>
+          <div class="form-group" [class.has-error]="debitnamecontrol.invalid && debitnamecontrol.touched">
+              <label for="debitname" class="control-label">Debit Card Holder Name</label>
+              <input type="text" required class="form-control" id="debitname" name="debitname" [(ngModel)]="debitname" #debitnamecontrol="ngModel" placeholder="Debit Holder Name">
+              <span class="help-block" *ngIf="debitnamecontrol.invalid && debitnamecontrol.touched">Debitname is required</span>
+      </div>
+      <div class="form-group" [class.has-error]="datecontrol.invalid && datecontrol.touched">
+          <label for="date" class="control-label">Date of Expiry</label>
+          <input type="text" required class="form-control dates" id="date" name="date" [(ngModel)]="date" #datecontrol="ngModel">
+          <span class="help-block" *ngIf="datecontrol.invalid && datecontrol.touched">Date is required</span>
+        </div>
+      <div class="form-group" [class.has-error]="cvvcontrol.invalid && cvvcontrol.touched">
+          <label class="control-label">CVV</label>
+          <input type="password" required class="form-control cvvs" name="cvv" [(ngModel)]="cvv" #cvvcontrol="ngModel">
+          <span class="help-block" *ngIf="cvvcontrol.invalid && cvvcontrol.touched">CVV is required</span>
+      </div>
+   </div>
+  
+    <div class="panel-footer">
+    <button type="submit" class="btn btn-primary" [disabled]="debitform.invalid">Pay</button>
+    <button type="button" routerLink='/ticketbooking' class="btn btn-primary cancel">Cancel</button>
+    </div>
+  </div>
+  </form>
+

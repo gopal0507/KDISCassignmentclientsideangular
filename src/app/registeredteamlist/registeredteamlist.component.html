@@ -1,0 +1,24 @@
+<table class="table tablelist">
+    <thead>
+        <tr class="head">
+            
+            <th style="width:20%">Team Name</th>
+            <th style="width:20%">Location</th>
+            <th style="width:20%">Contact</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-body" *ngFor="let team of newTeam">
+           
+            <td>
+              {{team.teamname}}
+            </td>
+            <td>
+                   {{team.location}}
+                 </td>
+            <td>
+              {{team.contact}}
+            </td>        
+        </tr>
+    </tbody>
+</table>
